@@ -20,6 +20,7 @@
 }
 .subtotal > button{
     display: flex;
+    display: block;
     background: #f0c14b;
     border-radius: 2px;
     width: 100%;
@@ -28,4 +29,9 @@
     margin-top: 10px;
     border-color: #888734 #9c7e31 #846a29;
     color: #111;
+   align-content: center;
+}
+.subtotal > button > p{
+    text-align: center;
+    font-weight: bolder;
 }

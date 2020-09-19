@@ -1,7 +1,7 @@
 import React from 'react';
 import './Orders.css';
 //install moment
-import moment from 'moment';
+import moment from 'moment';//to set Time and Date format
 import CheckoutProduct from './CheckoutProduct';
 import CurrencyFormat from 'react-currency-format';
 

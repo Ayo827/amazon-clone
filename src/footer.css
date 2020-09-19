@@ -1,0 +1,108 @@
+.footer__top{
+    display: 100%;
+    align-items: center;
+
+}
+.footer__backtotop{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    background-color: rgb(26, 40, 71);
+    color: white;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+.footer__backtotop > p{
+    margin-left:48%;
+}
+.footer__option{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 30px;
+    width: fit-content;
+}
+.footer__options{
+    display: flex;
+    background-color: rgb(31, 33, 53);
+    border-bottom: 1px solid white;
+    align-items: auto;
+    justify-content: center;
+}
+.footer__option > h4{
+    padding-left: 20%;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer__option > ul > li{
+    list-style: none;
+    line-height: 30px;
+    padding-left: 10%;
+    color: white;
+    font-size: 13px;
+}
+.footer__middle{
+    display: flex;
+    background-color: rgb(31, 33, 53);
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.footer__middleLogo{
+    width: 60px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-right: 60px;
+    display: flex;
+}
+.footer__Icon{
+    padding-right: 4px;
+}
+.footer__middle1{
+    display: flex;
+    padding-bottom: 30px;
+    position: relative;
+}
+.footer__middleitems{
+    display: flex;
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    justify-items: left;
+}
+.footer__bottom{
+    display: flex;
+    background-color: #111;
+    align-items: center;
+    justify-content: center;
+}
+.footer__bottom1{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.footer__bottom1 > p{
+    display: flex;
+    color: white;
+    font-size:12px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.copyIcon{
+    width: 20px;
+    object-fit: contain;
+}
+.footer__bottom1 > p > span{
+    display: flex;
+    font-weight: lighter;
+    color: grey;
+    align-items: center;
+    margin-left: 10px;
+}
+

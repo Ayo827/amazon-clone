@@ -43,3 +43,4 @@ exports.api = functions.https.onRequest(app);
 
 //Exampl endpoint
 //http://localhost:5001/clone-1e5df/us-central1/api
+//firebase emulators:start

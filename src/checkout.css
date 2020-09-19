@@ -3,6 +3,7 @@
     padding: 20px;
     background-color: white;
     height: max-content;
+    margin: 0;
 }
 .checkout__ad{
     width: 100%;
@@ -13,3 +14,25 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+.checkout__body{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    align-content: center;
+    display: block;
+   
+}
+.checkout__body > h3{
+    color: #f0c14b;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.checkout__body > h2{
+    color: #131921;
+    font-size: 2rem;
+    text-align: center;
+    font-weight:bold;
+}
+

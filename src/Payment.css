@@ -24,13 +24,13 @@
 .payment__address, .payment__title, .payment__details{
     flex: 0.8;
 }
-.payment__derails > form{
+.payment__details > form{
     max-width: 400px;
 }
 .payment__details > h3{
     padding-bottom: 20px;
 }
-.payment__details > form > div > button{
+.payment__details > form > div > div > button{
     background: #f0c14b;
     border-radius: 2px;
     width: 100%;

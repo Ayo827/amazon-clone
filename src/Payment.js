@@ -20,7 +20,7 @@ function Payment(){
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
-    const [clientSecret, setClientSecret] = useState(true);
+    const [clientSecret, setClientSecret] = useState('');
 
     useEffect(() => {
 
@@ -36,9 +36,8 @@ function Payment(){
         }
         getClientSecret();
     }, [basket])
-    console.log("The secret is ", clientSecret);
     const handleSubmit = async e => {
-       e.preventDefault();
+       e.preventDefault();//to prevent page refresh after submitting form
        setProcessing(true);//prevents from clicking the buy Now button mutiple times
         const payload = await stripe.confirmCardPayment(clientSecret, {payment_method: {
             card: elements.getElement(CardElement)
@@ -66,6 +65,7 @@ function Payment(){
         setDisabled(e.empty);
         setError(e.error ? e.error.message : "");
     }
+    const userLoggedIn = () => { if(!user) history.push('./login');}
     return(
         <div className='payment'>
                 <div className='payment__container'>
@@ -78,7 +78,7 @@ function Payment(){
                             </div>
 
                             <div className='payment__address'>
-                                    <p>{user?.email}</p>
+                                    <p>{user ? user.email : 'Guest'}</p>
                                     <p>123, React lane</p>
                                     <p>Lagos, Nigeria</p>
                             </div>
@@ -121,9 +121,12 @@ function Payment(){
                                      thousandSeparator={true}
                                      prefix={'$'}
                                     />
-                                 <button disabled={processing || disabled || succeeded}>
-                                        <span>{processing ? <p>Processing</p>: "Buy Now"}</span>
-                                 </button>
+                                    <div onClick={userLoggedIn}>
+                                        <button disabled={processing || disabled || succeeded}>
+                                            <span>{processing ? <p>Processing</p>: "Buy Now"}</span>
+                                        </button>
+                                    </div>
+                              
                                 </div>
 
                                 {error && <div>{error}</div>}
